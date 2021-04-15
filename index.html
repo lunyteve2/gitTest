@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Member Survey Form</h1>
+      <p id="description">
+        Help us get to know you by filling out the form below!
+      </p>
+    </header>
+    <div class="form-div">
+      <form action="" id="survey-form">
+        <label for="name" id="name-label"></label>
+        <input type="text" id="name" required placeholder="Name" />
+
+        <label for="email" id="email-label"></label>
+        <input
+          type="email"
+          name=""
+          id="email"
+          placeholder="Email address"
+          required
+        />
+
+        <label for="number" id="number-label"></label>
+        <input
+          type="number"
+          name=""
+          id="number"
+          min="0"
+          max="100"
+          placeholder="Age"
+        />
+
+        <label for="interests"></label>
+        <select name="interests" id="dropdown">
+          <option value="cars">Cars</option>
+          <option value="pets">Pets</option>
+          <option value="television">Television</option>
+          <option value="movies">Movies</option>
+        </select>
+
+        <div id="radio-div">
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="male" value="male" />
+          <label for="female">Female</label>
+          <input type="radio" name="gender" id="female" value="female" />
+        </div>
+
+        <div id="checkbox-div">
+          <label for="bread">Bread</label>
+          <input type="checkbox" name="fav-carb" id="bread" value="bread" />
+          <label for="pasta">Pasta</label>
+          <input type="checkbox" name="fav-carb" id="pasta" value="pasta" />
+        </div>
+
+        <label for="comment">Anything else?</label>
+        <textarea id="comment" placeholder="Additional comments"></textarea>
+
+        <label for="submit"></label>
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
